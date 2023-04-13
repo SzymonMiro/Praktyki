@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'dvp-app';
+  isDarkTheme: boolean = false;
+
+  toggleTheme() {
+    this.isDarkTheme = !this.isDarkTheme;
+  }
 }
