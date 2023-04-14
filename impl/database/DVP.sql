@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 12, 2023 at 03:12 PM
+-- Generation Time: Apr 14, 2023 at 10:55 AM
 -- Wersja serwera: 10.4.28-MariaDB
 -- Wersja PHP: 8.2.4
 
@@ -44,7 +44,6 @@ CREATE TABLE `bmw` (
 --
 
 INSERT INTO `bmw` (`Model`, `Year`, `Price`, `Transmission`, `Mileage`, `FuelType`, `Tax`, `Mpg`, `EngineSize`) VALUES
-('model', 0, 0, 'transmission', 0, 'fuelType', 0, 0, 0),
 (' 5 Series', 2014, 11200, 'Automatic', 67068, 'Diesel', 125, 57.6, 2),
 (' 6 Series', 2018, 27000, 'Automatic', 14827, 'Petrol', 145, 42.8, 2),
 (' 5 Series', 2016, 16000, 'Automatic', 62794, 'Diesel', 160, 51.4, 3),
@@ -780,9 +779,9 @@ INSERT INTO `bmw` (`Model`, `Year`, `Price`, `Transmission`, `Mileage`, `FuelTyp
 (' 3 Series', 2017, 17998, 'Semi-Auto', 32000, 'Diesel', 145, 62.8, 2),
 (' 7 Series', 2018, 25998, 'Semi-Auto', 22892, 'Petrol', 145, 41.5, 3),
 (' 8 Series', 2019, 67898, 'Semi-Auto', 7903, 'Diesel', 145, 38.2, 3),
-(' 1 Series', 2017, 20498, 'Semi-Auto', 16875, 'Petrol', 145, 39.8, 3);
+(' 1 Series', 2017, 20498, 'Semi-Auto', 16875, 'Petrol', 145, 39.8, 3),
+(' 4 Series', 2019, 21998, 'Semi-Auto', 11032, 'Diesel', 145, 65.7, 2);
 INSERT INTO `bmw` (`Model`, `Year`, `Price`, `Transmission`, `Mileage`, `FuelType`, `Tax`, `Mpg`, `EngineSize`) VALUES
-(' 4 Series', 2019, 21998, 'Semi-Auto', 11032, 'Diesel', 145, 65.7, 2),
 (' 1 Series', 2018, 15498, 'Manual', 5953, 'Petrol', 150, 53.3, 1.5),
 (' 1 Series', 2017, 13698, 'Semi-Auto', 12102, 'Diesel', 0, 78.5, 1.5),
 (' 5 Series', 2017, 23998, 'Semi-Auto', 13970, 'Diesel', 145, 65.7, 2),
@@ -1524,9 +1523,9 @@ INSERT INTO `bmw` (`Model`, `Year`, `Price`, `Transmission`, `Mileage`, `FuelTyp
 (' 2 Series', 2019, 21773, 'Automatic', 123, 'Diesel', 145, 49.6, 2),
 (' 1 Series', 2019, 24142, 'Semi-Auto', 16000, 'Petrol', 145, 39.8, 3),
 (' 2 Series', 2019, 22773, 'Automatic', 123, 'Diesel', 145, 49.6, 2),
-(' 3 Series', 2019, 27900, 'Manual', 123, 'Diesel', 145, 61.4, 2);
+(' 3 Series', 2019, 27900, 'Manual', 123, 'Diesel', 145, 61.4, 2),
+(' 3 Series', 2019, 20966, 'Automatic', 9582, 'Petrol', 145, 48.7, 2);
 INSERT INTO `bmw` (`Model`, `Year`, `Price`, `Transmission`, `Mileage`, `FuelType`, `Tax`, `Mpg`, `EngineSize`) VALUES
-(' 3 Series', 2019, 20966, 'Automatic', 9582, 'Petrol', 145, 48.7, 2),
 (' 5 Series', 2015, 17002, 'Semi-Auto', 29116, 'Diesel', 30, 62.8, 2),
 (' M4', 2018, 38776, 'Manual', 8869, 'Petrol', 145, 32.1, 3),
 (' X3', 2019, 32822, 'Semi-Auto', 4550, 'Diesel', 145, 54.3, 2),
@@ -2267,9 +2266,9 @@ INSERT INTO `bmw` (`Model`, `Year`, `Price`, `Transmission`, `Mileage`, `FuelTyp
 (' 3 Series', 2016, 14990, 'Manual', 33201, 'Petrol', 150, 48.7, 2),
 (' X1', 2016, 17998, 'Semi-Auto', 38565, 'Diesel', 145, 55.4, 2),
 (' 2 Series', 2018, 17498, 'Semi-Auto', 18970, 'Petrol', 145, 51.4, 1.5),
-(' 5 Series', 2015, 16998, 'Semi-Auto', 31322, 'Diesel', 145, 53.3, 3);
+(' 5 Series', 2015, 16998, 'Semi-Auto', 31322, 'Diesel', 145, 53.3, 3),
+(' 3 Series', 2015, 16298, 'Semi-Auto', 22867, 'Diesel', 145, 56.5, 3);
 INSERT INTO `bmw` (`Model`, `Year`, `Price`, `Transmission`, `Mileage`, `FuelType`, `Tax`, `Mpg`, `EngineSize`) VALUES
-(' 3 Series', 2015, 16298, 'Semi-Auto', 22867, 'Diesel', 145, 56.5, 3),
 (' 3 Series', 2019, 24498, 'Semi-Auto', 14897, 'Diesel', 145, 52.3, 2),
 (' 2 Series', 2020, 21890, 'Semi-Auto', 11, 'Petrol', 145, 50.4, 1.5),
 (' 2 Series', 2020, 22980, 'Manual', 10, 'Petrol', 145, 47.1, 1.5),
@@ -3013,9 +3012,9 @@ INSERT INTO `bmw` (`Model`, `Year`, `Price`, `Transmission`, `Mileage`, `FuelTyp
 (' 3 Series', 2019, 23980, 'Semi-Auto', 1051, 'Petrol', 145, 47.9, 2),
 (' 3 Series', 2019, 23980, 'Semi-Auto', 2480, 'Petrol', 145, 47.9, 2),
 (' 2 Series', 2017, 16698, 'Automatic', 27201, 'Diesel', 145, 64.2, 2),
-(' 1 Series', 2014, 13798, 'Manual', 50026, 'Petrol', 305, 35.3, 3);
+(' 1 Series', 2014, 13798, 'Manual', 50026, 'Petrol', 305, 35.3, 3),
+(' 2 Series', 2019, 20750, 'Manual', 110, 'Petrol', 145, 52.3, 1.5);
 INSERT INTO `bmw` (`Model`, `Year`, `Price`, `Transmission`, `Mileage`, `FuelType`, `Tax`, `Mpg`, `EngineSize`) VALUES
-(' 2 Series', 2019, 20750, 'Manual', 110, 'Petrol', 145, 52.3, 1.5),
 (' 2 Series', 2019, 20450, 'Manual', 10, 'Petrol', 145, 42.8, 1.5),
 (' 3 Series', 2014, 11698, 'Manual', 21798, 'Diesel', 20, 68.9, 2),
 (' 3 Series', 2016, 18998, 'Semi-Auto', 33087, 'Diesel', 160, 51.4, 3),
