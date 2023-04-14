@@ -1,11 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Vehicles } from './';
 
-@Injectable({
-  providedIn: 'root'
-})
 
 export interface Vehicle {
   "Model": string;
@@ -19,16 +15,20 @@ export interface Vehicle {
   "EngineSize": number;
 }
 
+@Injectable({
+  providedIn: 'root'
+})
+
 export class DataService {
-  private url = 'http://localhost/phpmyadmin/index.php?route=/database/structure&db=csv_db+6';
+  private url = 'impl\database\DVP.sql';
 
   constructor(private http: HttpClient) { }
 
   /**
    * Pobiera listę wszystkich pojazdów.
    */
-  public getAllData(): Observable<Vehicles[]> {
-    return this.http.get<Vehicles[]>(`${this.url}/all`);
+  public getAllData(): Observable<Vehicle[]> {
+    return this.http.get<Vehicle[]>(`${this.url}/all`);
   }
 }
 
