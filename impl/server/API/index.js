@@ -4,8 +4,8 @@ import express from 'express';
 const connection = mysql2.createConnection({
     host: "localhost", // "127.0.0.1"
     database: "csv_db 6",
-    user: "dvs",
-    password: "dvs",
+    user: "DVP",
+    password: "DVP",
 });
 
 const app = express();
