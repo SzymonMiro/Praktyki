@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-tables',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./tables.component.css']
 })
 export class TablesComponent {
+  constructor(
+    private dataService: DataService
+  )
+  {
 
+  }
+
+  private getData() 
+  {
+    this.dataService.getAllData()
+    .subscribe(res => {
+      console.log(res);
+    })
+  }
 }
