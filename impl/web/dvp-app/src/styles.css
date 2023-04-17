@@ -6,6 +6,7 @@ body
 {
   background-color: #e7e7e7;
   margin: 0;
+<<<<<<< HEAD
 }
 
 nav {
@@ -79,3 +80,6 @@ align-items: center;
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+=======
+}
+>>>>>>> d36cb3258afb60b8bf57146d8258d8a1a8957f08
