@@ -1,1 +1,51 @@
-<p>tables works!</p>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+ 
+  <ng-container matColumnDef="Model">
+    <th mat-header-cell *matHeaderCellDef> Model </th>
+    <td mat-cell *matCellDef="let element"> {{element.Model}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Year">
+    <th mat-header-cell *matHeaderCellDef> Year </th>
+    <td mat-cell *matCellDef="let element"> {{element.Year}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Price">
+    <th mat-header-cell *matHeaderCellDef> Price </th>
+    <td mat-cell *matCellDef="let element"> {{element.Price}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Transmisson">
+    <th mat-header-cell *matHeaderCellDef> Transmisson </th>
+    <td mat-cell *matCellDef="let element"> {{element.Transmisson}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Mileage">
+    <th mat-header-cell *matHeaderCellDef> Mileage </th>
+    <td mat-cell *matCellDef="let element"> {{element.Mileage}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="FuelType">
+    <th mat-header-cell *matHeaderCellDef> FuelType </th>
+    <td mat-cell *matCellDef="let element"> {{element.FuelType}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Tax">
+    <th mat-header-cell *matHeaderCellDef> Tax </th>
+    <td mat-cell *matCellDef="let element"> {{element.Tax}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Mpg">
+    <th mat-header-cell *matHeaderCellDef> Mpg </th>
+    <td mat-cell *matCellDef="let element"> {{element.Mpg}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="EngineSize">
+    <th mat-header-cell *matHeaderCellDef> EngineSize </th>
+    <td mat-cell *matCellDef="let element"> {{element.EngineSize}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
