@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { DataService, Vehicle } from '../services/data.service';
 
 @Component({
   selector: 'app-tables',
@@ -8,12 +8,19 @@ import { DataService } from '../services/data.service';
 })
 export class TablesComponent {
   constructor(
-    private dataService: DataService) 
-    {}
+    private dataService: DataService
+    ) {}
+
+    public dataSource: Vehicle[] = [];
+    public displayedColumns: string[] = ['Model', 'Year', 'Price', 'Transmission', 'Mileage', 'FuelType', 'Tax', 'Mpg', 'EngineSize'];
+    
+    ngOnInit() {
+      this.getData();
+    } 
 
   private getData() {
     this.dataService.getAllData().subscribe(res => {
-      console.log(res);
+      this.dataSource = res.slice(0, 20);
     });
   }
 }
