@@ -16,4 +16,8 @@ export class TablesComponent {
       console.log(res);
     });
   }
+
+  ngOnInit() {
+    this.getData();
+  }
 }
