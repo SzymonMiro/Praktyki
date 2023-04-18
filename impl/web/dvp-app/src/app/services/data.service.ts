@@ -20,7 +20,7 @@ export interface Vehicle {
 })
 
 export class DataService {
-  private url = 'impl\database\DVP.sql';
+  private url = 'http://localhost:5000';
 
   constructor(private http: HttpClient) { }
 

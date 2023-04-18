@@ -1,5 +1,6 @@
 import mysql2 from 'mysql2';
 import express from 'express';
+import cors from 'cors';
 
 const connection = mysql2.createConnection({
     host: "localhost", // "127.0.0.1"
@@ -10,6 +11,14 @@ const connection = mysql2.createConnection({
 
 const app = express();
 
+const allowedOrigins = ['http://localhost:4200'];
+
+const options = { 
+    origin: allowedOrigins
+};
+
+app.use(cors(options));
+ 
 const PORT = 5000;
 
 app.listen(PORT, () => {
