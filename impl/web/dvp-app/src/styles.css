@@ -1,6 +1,8 @@
 *
 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Oswald !important;
+  src: url(\src\assets\fonts\Oswald-Light.ttf)
+
 }
 body
 {
@@ -8,6 +10,8 @@ body
   margin: 0;
 }
 
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root
+{
+  --mdc-typography-body2-font-size: 16px;
+  --mdc-typography-subtitle2-font-size: 24px;
+}

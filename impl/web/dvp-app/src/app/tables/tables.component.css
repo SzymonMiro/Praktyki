@@ -1,0 +1,23 @@
+table
+{
+    position: relative;
+    font-size: 30px;
+}
+h1
+{
+    color: #4797ff;
+    font-size: 40px;
+}
+th
+{
+    color: #4797ff;
+    border-color: #4797ff;
+    text-align: center;
+}
+td
+{
+    text-align: center;
+}
+th {background: #dadada;} 
+  tr:nth-child(odd) {background: #CCC;}
+  tr:nth-child(even) {background: #EFEFEF;}
