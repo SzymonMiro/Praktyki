@@ -9,6 +9,10 @@ import { MainComponent } from './main/main.component';
 import { TablesComponent } from './tables/tables.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { ThemeModule } from './theme/theme.module';
+import { lightTheme } from './theme/light.theme';
+import { darkTheme } from './theme/dark.theme';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTableModule, 
-    HttpClientModule
+    HttpClientModule,
+    ThemeModule.forRoot({
+      themes: [lightTheme, darkTheme],
+      active: 'light'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
