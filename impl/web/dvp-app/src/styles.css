@@ -6,12 +6,27 @@
 }
 body
 {
-  background-color: #e7e7e7;
+  background-color: var(--body-background-color);
+  background-color: var(--main-background-color);
+  color: var(--body-color);
   margin: 0;
 }
 
-:root
+.light-theme
 {
   --mdc-typography-body2-font-size: 16px;
   --mdc-typography-subtitle2-font-size: 24px;
+  --body-background-color: #e7e7e7;
+  --body-color: black;
 }
+
+.dark-theme
+{
+  --mdc-typography-body2-font-size: 16px;
+  --mdc-typography-subtitle2-font-size: 24px;
+  --body-background-color: #434343;
+  --body-color: white;
+  --main-background-color: #555555;
+}
+
+

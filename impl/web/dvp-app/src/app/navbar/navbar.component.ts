@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ThemeService } from './theme/theme.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,14 +6,10 @@ import { ThemeService } from './theme/theme.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  constructor(private themeService: ThemeService) {}
+  constructor() {}
 
-  toggle() {
-    const active = this.themeService.getActiveTheme() ;
-    if (active.name === 'light') {
-      this.themeService.setTheme('dark');
-    } else {
-      this.themeService.setTheme('light');
-    }
-  }
+   change() {
+    var get = document.querySelector("body");
+        get!.classList.toggle("dark-theme");
+}
 }
