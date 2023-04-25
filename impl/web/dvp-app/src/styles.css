@@ -12,10 +12,6 @@ body
   margin: 0;
 }
 
-table
-{
-  background-color: var(--th-background-color);
-}
 
 .light-theme
 {
@@ -33,7 +29,7 @@ table
   --body-background-color: #434343;
   --body-color: white;
   --main-background-color: #555555;
-  --th-background-color: #1f1f1f;
+  --th-background-color: #000000;
 }
 
 
