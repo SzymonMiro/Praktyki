@@ -12,12 +12,18 @@ body
   margin: 0;
 }
 
+table
+{
+  background-color: var(--th-background-color);
+}
+
 .light-theme
 {
   --mdc-typography-body2-font-size: 16px;
   --mdc-typography-subtitle2-font-size: 24px;
   --body-background-color: #e7e7e7;
   --body-color: black;
+  --th-background-color: #dadada;
 }
 
 .dark-theme
@@ -27,6 +33,7 @@ body
   --body-background-color: #434343;
   --body-color: white;
   --main-background-color: #555555;
+  --th-background-color: #1f1f1f;
 }
 
 
