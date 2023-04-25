@@ -31,6 +31,6 @@ export class ChartsComponent {
           width: 500
         };
         Plotly.newPlot('myDiv', data, layout);
-      });
+      }); 
     }
 }
