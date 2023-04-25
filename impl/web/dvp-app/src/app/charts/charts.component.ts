@@ -10,17 +10,27 @@ export class ChartsComponent {
   constructor(
     private dataService: DataService
     ) {}
-    var data = [{
-      values: [19, 26, 55],
-      labels: ['Residential', 'Non-Residential', 'Utility'],
-      type: 'pie'
-    }];
+
+    public dataSource: Vehicle[] = [];
+    public displayedColumns: string[] = ['FuelType'];
+
+    ngOnInit() {
+      this.getData();
+    } 
     
-    var layout = {
-      height: 400,
-      width: 500
-    };
-    
-    Plotly.newPlot('myDiv', data, layout);
-    
+    private getData() {
+      this.dataService.getAllData().subscribe(res => {
+        var data = [{
+          values: [],
+          labels: ['Diesel', 'Other', 'Petrol'],
+          type: 'pie'
+        }];
+        
+        var layout = {
+          height: 400,
+          width: 500
+        };
+        Plotly.newPlot('myDiv', data, layout);
+      });
+    }
 }
