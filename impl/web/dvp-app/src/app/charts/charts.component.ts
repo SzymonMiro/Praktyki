@@ -32,5 +32,5 @@ export class ChartsComponent {
         };
         Plotly.newPlot('myDiv', data, layout);
       }); 
-    }
+    } 
 }
