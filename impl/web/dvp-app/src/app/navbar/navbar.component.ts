@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  constructor() {}
 
+   change() {
+    var get = document.querySelector("body");
+        get!.classList.toggle("dark-theme");
+}
 }

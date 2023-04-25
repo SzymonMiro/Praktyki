@@ -2,7 +2,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
     background-color: #c5c5c5;
   }
   li a {
@@ -33,23 +32,28 @@ ul {
     background-color: #c5c5c5;
     padding: 20px;
     margin-top: auto;
+    background-color: var(--body-background-color);
+    
     }
     .sidebar ul {
     list-style: none;
     padding: 0;
     margin: 0;
     background-color: #c5c5c5;
+    background-color: var(--body-background-color);
     }
     .sidebar li {
     margin-bottom: 10px;
     background-color: #c5c5c5;
+    background-color: var(--body-background-color);
     
     }
     .sidebar a {
     color: #333;
+    color: var(--body-color);
     text-decoration: none;
     background-color: #c5c5c5;
-
+    background-color: var(--body-background-color);
     }
 
     
