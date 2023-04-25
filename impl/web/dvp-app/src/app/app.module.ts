@@ -9,6 +9,7 @@ import { MainComponent } from './main/main.component';
 import { TablesComponent } from './tables/tables.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { ChartsComponent } from './charts/charts.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     SidebarComponent,
     MainComponent,
     TablesComponent,
+    ChartsComponent,
   ],
   imports: [
     BrowserModule,
