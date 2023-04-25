@@ -2,6 +2,7 @@ table
 {
     position: relative;
     font-size: 30px;
+
 }
 h1
 {
@@ -19,6 +20,7 @@ td
 {
     text-align: center;
 }
+
 th {background: #dadada;} 
   tr:nth-child(odd) {background: #CCC;}
   tr:nth-child(even) {background: #EFEFEF;}
