@@ -16,22 +16,5 @@ body
 {
   --mdc-typography-body2-font-size: 16px;
   --mdc-typography-subtitle2-font-size: 24px;
-<<<<<<< HEAD
 }
 
-=======
-  --body-background-color: #e7e7e7;
-  --body-color: black;
-}
-
-.dark-theme
-{
-  --mdc-typography-body2-font-size: 16px;
-  --mdc-typography-subtitle2-font-size: 24px;
-  --body-background-color: #434343;
-  --body-color: white;
-  --main-background-color: #555555;
-}
-
-
->>>>>>> 79e8b51834d4a9ed7d12e94f1e53a3095185f942
