@@ -10,6 +10,10 @@ import { TablesComponent } from './tables/tables.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ChartsComponent } from './charts/charts.component';
+import * as PlotlyJS from 'plotly.js-dist-min';
+import { PlotlyModule } from 'angular-plotly.js';
+
+PlotlyModule.plotlyjs = PlotlyJS;
 
 
 @NgModule({
@@ -27,9 +31,9 @@ import { ChartsComponent } from './charts/charts.component';
     BrowserAnimationsModule,
     MatTableModule, 
     HttpClientModule,
+    PlotlyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-

@@ -12,9 +12,22 @@ body
   margin: 0;
 }
 
-table
+th 
 {
-  background-color: var(--th-background-color);
+    background-color: #dadada;
+    background-color: var(--th-background-color);
+} 
+  
+tr:nth-child(odd) 
+{
+    background-color: #CCC;
+    background-color: var(--tr1=-background-color);
+}
+  
+tr:nth-child(even) 
+{
+    background-color: #EFEFEF;
+    background-color: var(--tr2-background-color);
 }
 
 .light-theme
@@ -24,6 +37,8 @@ table
   --body-background-color: #e7e7e7;
   --body-color: black;
   --th-background-color: #dadada;
+  --tr1-background-color: #CCC;
+  --tr2-background-color: #EFEFEF;;
 }
 
 .dark-theme
@@ -33,7 +48,9 @@ table
   --body-background-color: #434343;
   --body-color: white;
   --main-background-color: #555555;
-  --th-background-color: #1f1f1f;
+  --th-background-color: #000000;
+  --tr1-background-color: #131313;
+  --tr2-background-color: #303030;
 }
 
 

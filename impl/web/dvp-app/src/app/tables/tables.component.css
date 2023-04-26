@@ -21,6 +21,20 @@ td
     text-align: center;
 }
 
-th {background: #dadada;} 
-  tr:nth-child(odd) {background: #CCC;}
-  tr:nth-child(even) {background: #EFEFEF;}
+th 
+{
+    background-color: #dadada;
+    background-color: var(--th-background-color);
+} 
+  
+tr:nth-child(odd) 
+{
+    background-color: #CCC;
+    background-color: var(--tr1-background-color);
+}
+  
+tr:nth-child(even) 
+{
+    background-color: #EFEFEF;
+    background-color: var(--tr2-background-color);
+}

@@ -14,23 +14,14 @@ export class ChartsComponent {
     public dataSource: Vehicle[] = [];
     public displayedColumns: string[] = ['FuelType'];
 
+    public graph = {
+      data: [
+          { x: [1, 2, 3], y: [2, 6, 3], type: 'scatter', mode: 'lines+points', marker: {color: 'red'} },
+          { x: [1, 2, 3], y: [2, 5, 3], type: 'bar' },
+      ],
+      layout: {width: 320, height: 240, title: 'A Fancy Plot'}
+    }
+
     ngOnInit() {
-      this.getData();
-    } 
-    
-    private getData() {
-      this.dataService.getAllData().subscribe(res => {
-        var data = [{
-          values: [],
-          labels: ['Diesel', 'Other', 'Petrol'],
-          type: 'pie'
-        }];
-        
-        var layout = {
-          height: 400,
-          width: 500
-        };
-        Plotly.newPlot('myDiv', data, layout);
-      }); 
     } 
 }
