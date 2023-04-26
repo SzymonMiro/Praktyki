@@ -15,11 +15,12 @@ export class ChartsComponent {
     public displayedColumns: string[] = ['FuelType'];
 
     public graph = {
-      data: [
-          { x: [1, 2, 3], y: [2, 6, 3], type: 'scatter', mode: 'lines+points', marker: {color: 'red'} },
-          { x: [1, 2, 3], y: [2, 5, 3], type: 'bar' },
-      ],
-      layout: {width: 320, height: 240, title: 'A Fancy Plot'}
+      data: [{
+        values: [7027, 3, 298, 3417, 36],
+        labels: ['Diesel', 'Electric','Hybrid', 'Petrol', 'Other', ],
+        type: 'pie'
+    }],
+      layout: {autosize: true, title: 'Wykres '}
     }
 
     ngOnInit() {
