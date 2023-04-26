@@ -20,6 +20,8 @@ body
   --body-background-color: #e7e7e7;
   --body-color: black;
   --th-background-color: #dadada;
+  --tr1-background-color: #CCC;
+  --tr2-background-color: #EFEFEF;;
 }
 
 .dark-theme

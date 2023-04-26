@@ -37,4 +37,3 @@ PlotlyModule.plotlyjs = PlotlyJS;
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-

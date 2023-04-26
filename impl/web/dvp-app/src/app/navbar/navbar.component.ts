@@ -12,4 +12,4 @@ export class NavbarComponent {
     var get = document.querySelector("body");
         get!.classList.toggle("dark-theme");
 }
-}
+} 
