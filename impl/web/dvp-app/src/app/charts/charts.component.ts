@@ -20,7 +20,7 @@ export class ChartsComponent {
         labels: ['Diesel', 'Electric','Hybrid', 'Petrol', 'Other', ],
         type: 'pie'
     }],
-      layout: {autosize: true, title: 'Wykres '}
+      layout: {autosize: true, title: 'Wykres'}
     }
 
     ngOnInit() {
