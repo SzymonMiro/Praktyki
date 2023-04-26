@@ -12,7 +12,6 @@ body
   margin: 0;
 }
 
-
 .light-theme
 {
   --mdc-typography-body2-font-size: 16px;
@@ -22,6 +21,7 @@ body
   --th-background-color: #dadada;
   --tr1-background-color: #CCC;
   --tr2-background-color: #EFEFEF;;
+  --td-color: black;
 }
 
 .dark-theme
@@ -32,6 +32,10 @@ body
   --body-color: white;
   --main-background-color: #555555;
   --th-background-color: #000000;
+  --tr1-background-color: #131313;
+  --tr2-background-color: #303030;
+  --td-color: white;
+  --hover-background-color: #373737;
 }
 
 
