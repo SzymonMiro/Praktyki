@@ -19,22 +19,25 @@ th
 td
 {
     text-align: center;
+    color: var(--td-color);
+}
+
+table:hover
+{
+    background-color: var(--hover-background-color) ;
 }
 
 th 
 {
-    background-color: #dadada;
     background-color: var(--th-background-color);
 } 
   
 tr:nth-child(odd) 
 {
-    background-color: #CCC;
     background-color: var(--tr1-background-color);
 }
   
 tr:nth-child(even) 
 {
-    background-color: #EFEFEF;
     background-color: var(--tr2-background-color);
 }
