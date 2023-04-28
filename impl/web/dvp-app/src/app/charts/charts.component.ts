@@ -16,13 +16,19 @@ export class ChartsComponent {
 
     public graph = {
       data: [{
-        values: [7027, 3, 298, 3417, 36],
+        url:"http://localhost:4200", 
         labels: ['Diesel', 'Electric','Hybrid', 'Petrol', 'Other', ],
         type: 'pie'
+        
     }],
-      layout: {autosize: true, title: 'Wykres'}
+      layout: {autosize: true, title: 'Wykres',  'plot_bgcolor': 'rgba(0,0,0,0)',
+      'paper_bgcolor': 'rgba(0,0,0,0)', font: {
+        family: 'Courier New, monospace',
+        size: 18,
+        color: '#aaaaaa'
+      } }
+      
     }
-
     ngOnInit() {
     } 
 }
